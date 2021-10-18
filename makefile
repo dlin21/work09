@@ -1,11 +1,11 @@
-all: struct.o
-	gcc -o struct struct.o
+all: structy.o
+	gcc -o structy structy.o
 	
-struct.o: struct.c
-	gcc -c struct.c
+struct.o: structy.c
+	gcc -c structy.c
 	
 run:
-	./struct
+	./structy
 
 clean:
 	rm *.o
